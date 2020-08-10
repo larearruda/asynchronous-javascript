@@ -1,0 +1,44 @@
+Tips visual studio code
+
+Extensões:
+- Live Server
+- Node Exec
+- Prettier - Code formatter
+
+COMANDOS
+control ^ + `   abre terminal
+
+
+Assíncronismo x sincronismo
+- Codigo sincrono: mais fácil de entender e de prever
+- Código assíncrono: não dá pra ler e saber de cara a ordem, não é possível prever de cara, entretando é melhor para perfomance.
+
+Blocking x Non-Blocking
+- Blocking: acontece de maneira síncrona
+- Non-blocking: acontece de maneira assíncrona
+
+Multi-thread programming
+- O hardware do computador é assíncrono, quem poe bloqueio é a linguagem. Consegue iniciar processos e retomar depois.
+- Threads são processos que compartilham o mesmo espaço na memória.
+- Memória compartilhada signfica 'race conditions' (competiçao entre quem vai ser executado primeiro)
+- Dá pra gerenciar com 'locks' :  'deadlocks/livelocks'
+- Quando uma thread é bloqueada, outra toma conta.
+- É possível escrever aplicações com alta perfomance com threads mas é bem difícil de gerenciar.
+
+Event-Driven Programmin (programaçao orientada à eventos)
+- Node/Chrome usam threads, mas o código javascript é executado em apenas uma thread.
+- Assíncronismo acontece através de eventos
+- Eventos são gerenciados/orquestrados por EventLoops
+
+
+Async Patterns
+- Callbacks
+- Promises
+- Async/Await
+- Generatos
+
+Async Patterns - Callbacks
+- Quizzes: Callbacks.quizz.md 
+- O primeiro parametro do callback sempre é o erro para garantir que todas as falhas serão vistas.
+-> # Question 2
+callsbacks.quizz.answer.md -> # Question 2
